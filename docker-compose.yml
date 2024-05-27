@@ -1,0 +1,11 @@
+services:
+  stashstream:
+    image: stashstream
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_STASH_URL=http://localhost:9999
+      - VITE_API_KEY=YOUR_API_KEY_HERE
