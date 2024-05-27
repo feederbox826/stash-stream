@@ -1,9 +1,6 @@
 services:
   stashstream:
-    image: stashstream
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ghcr.io/feederbox826/stash-stream:latest
     ports:
       - "5173:5173"
     environment:
